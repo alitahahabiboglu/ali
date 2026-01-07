@@ -1,19 +1,10 @@
 Ali Habiboglu - Academic Portfolio
 
-This repository hosts my professional academic portfolio and resume website. It showcases my research in Spintronics, Device Physics, and Semiconductor Fabrication at the University of Arizona.
+This repository hosts my professional academic portfolio and resume website. It showcases my research in Device Physics, Spintronics, and Semiconductor Fabrication at the University of Arizona.
 
-🔗 Live Website
+🔗 Live Website 
 
-Click here to view my portfolio
-(Note: Replace the link above with your actual GitHub Pages link after you enable it)
-
-🛠️ Technologies Used
-
-HTML5: Semantic structure for accessibility.
-
-Tailwind CSS: Modern, utility-first CSS framework for styling.
-
-Responsive Design: Optimized for desktop and mobile viewing.
+https://alitahahabiboglu.github.io/ali/
 
 📄 Content Highlights
 
