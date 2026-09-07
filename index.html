@@ -1,431 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Habiboglu - Spintronics & Device Physics</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #4f46e5; /* Indigo 600 */
-            --primary-light: #818cf8; /* Indigo 400 */
-            --background: #0f172a; /* Slate 900 */
-            --text-color: #e2e8f0; /* Slate 200 */
-            --accent-color: #3b82f6; /* Blue 500 for links/buttons */
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--background);
-            color: var(--text-color);
-        }
-        .section-header {
-            border-left: 4px solid var(--primary-light);
-            padding-left: 1rem;
-            margin-bottom: 1.5rem;
-        }
-        .skill-badge {
-            background-color: #1e293b; /* Slate 800 */
-            color: var(--primary-light);
-        }
-        .card {
-            background-color: #1a2333; /* Slightly darker than section background */
-        }
-        .project-highlight {
-            border-left: 2px solid var(--primary-color);
-        }
-        .publication-item {
-            border-bottom: 1px dashed #374151; /* Slate 700 */
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ali Habiboglu | Fusion Materials, Graphene Nanoribbons and Spintronics</title>
+<meta name="description" content="Ali Habiboglu is a Provost's Postdoctoral Fellow at the University of Arizona working on first-wall materials for fusion, graphene nanoribbon radiation sensors and magnetic tunnel junctions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div id="app" class="min-h-screen">
-        <header class="bg-slate-900 shadow-xl border-b border-indigo-900 sticky top-0 z-10">
-            <div class="max-w-6xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-                    <div>
-                        <h1 class="text-3xl font-extrabold tracking-tight text-white">Ali Habiboglu</h1>
-                        <p class="mt-1 text-lg font-medium text-indigo-400">
-                            PhD Candidate | Semiconductor Research | Spintronics
-                        </p>
-                    </div>
-                    <!-- Navigation -->
-                    <nav class="mt-4 sm:mt-0">
-                        <ul class="flex space-x-4">
-                            <li><a href="#about" class="text-slate-300 hover:text-accent-color transition duration-300 font-semibold">About</a></li>
-                            <li><a href="#research" class="text-slate-300 hover:text-accent-color transition duration-300 font-semibold">Research Projects</a></li>
-                            <li><a href="#publications" class="text-slate-300 hover:text-accent-color transition duration-300 font-semibold">Publications</a></li>
-                            <li><a href="#education" class="text-slate-300 hover:text-accent-color transition duration-300 font-semibold">Education</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
+<a class="skip" href="#main">Skip to content</a>
+<div class="shell">
 
-        <main class="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            
-            <!-- Contact Bar -->
-            <div class="card p-4 rounded-lg shadow-xl mb-8">
-                <p class="text-lg font-semibold text-primary-light">
-                    I am starting a postdoctoral researcher position in Fall 2026.
-                </p>
-            </div>
-
-            <!-- Contact/Links Block -->
-            <div class="mt-4 flex flex-wrap gap-4 text-sm font-semibold mb-12">
-                <a href="mailto:alitahahabiboglu@gmail.com" class="text-slate-300 hover:text-accent-color transition duration-300">
-                    <span class="mr-1">📧</span> alitahahabiboglu@gmail.com
-                </a>
-                <a href="tel:+l52046l9724" class="text-slate-300 hover:text-accent-color transition duration-300">
-                    <span class="mr-1">📞</span> +1(520)46l-9724
-                </a>
-                <a href="https://www.linkedin.com/in/ali-habiboglu-91302963" target="_blank" class="text-slate-300 hover:text-accent-color transition duration-300">
-                    <span class="mr-1">🔗</span> LinkedIn
-                </a>
-                <a href="https://scholar.google.com/citations?user=w_5i1ywAAAAJ&hl=en" target="_blank" class="text-slate-300 hover:text-accent-color transition duration-300">
-                    <span class="mr-1">🔗</span> Google Scholar
-                </a>
-                <a href="https://orcid.org/0000-0002-6725-2208" target="_blank" class="text-slate-300 hover:text-accent-color transition duration-300">
-                    <span class="mr-1">🔗</span> Orcid
-                </a>
-                <a href="https://sites.google.com/view/spin-lab/home" target="_blank" class="text-slate-300 hover:text-accent-color transition duration-300">
-                    <span class="mr-1">🏢</span> Spin Lab (UofA)
-                </a>
-                <a href="https://buspin.bogazici.edu.tr/" target="_blank" class="text-slate-300 hover:text-accent-color transition duration-300">
-                    <span class="mr-1">🔬</span> BU Spin Lab
-                </a>
-            </div>
-
-            <!-- Summary/Bio Section -->
-            <section id="about" class="mb-12 pt-8">
-                <div class="section-header">
-                    <h2 class="text-3xl font-bold text-white">About Me</h2>
-                </div>
-                <p class="text-lg leading-relaxed">
-                    I am a physicist with a passion of <span class="font-semibold">bridging physics and engineering</span>. I bring over <span class="font-semibold">12 years of experience</span> in semiconductor research, nano-device fabrication, spintronics with my knowledge in thin-film deposition and integration of emerging materials. My expertise spans device physics, fabriation (thin-film deposition with PVD, photolithography, etching) and physical/electrical characterization methods (SEM, AFM/MFM, XRD, PPMS, high-frequency/DC testing).
-                </p>
-                <p class="mt-4 text-lg leading-relaxed">
-                    Throughout my Ph.D. at the University of Arizona and collaborations with industry partners (SRC, DARPA, NSF), I contributed to developing high-performance, low energy nano-scale devices by utilizing novel physical mechanisms and materials in Magnetic Tunnel Junctions (MTJs). I am interested in developing and optimizing high-entropy coatings tailored for the extreme environments encountered in fusion technology, as well as graphene nanoribbon–based devices, specifically exploring the potential of GNR diagnostic sensors for first-wall applications. Also, I have built, and refurbished thin film fabrication and processing systems, designed and set-up automated electrical test systems, and optimized data analysis workflow.
-                </p>
-            </section>
-
-            <!-- Skills Section -->
-            <section class="mb-12">
-                <div class="section-header">
-                    <h2 class="text-3xl font-bold text-white">Core Expertise</h2>
-                </div>
-                <div class="flex flex-wrap gap-3">
-                    <span class="skill-badge text-sm font-semibold px-4 py-1.5 rounded-full shadow-lg">Semiconductor Device Fabrication</span>
-                    <span class="skill-badge text-sm font-semibold px-4 py-1.5 rounded-full shadow-lg">Device Physics</span>
-                    <span class="skill-badge text-sm font-semibold px-4 py-1.5 rounded-full shadow-lg">Thin-Film Deposition PVD</span>
-                    <span class="skill-badge text-sm font-semibold px-4 py-1.5 rounded-full shadow-lg">Photolithography & Etching</span>
-                    <span class="skill-badge text-sm font-semibold px-4 py-1.5 rounded-full shadow-lg">SEM, AFM/C-AFM/MFM</span>
-                    <span class="skill-badge text-sm font-semibold px-4 py-1.5 rounded-full shadow-lg">X-Ray Diffraction (XRD)</span>
-                    <span class="skill-badge text-sm font-semibold px-4 py-1.5 rounded-full shadow-lg">MOKE & VSM (Temp. Dependent)</span>
-                    <span class="skill-badge text-sm font-semibold px-4 py-1.5 rounded-full shadow-lg">PPMS (Quantum Design)</span>
-                    <span class="skill-badge text-sm font-semibold px-4 py-1.5 rounded-full shadow-lg">High-Frequency Electrical Testing</span>
-                    <span class="skill-badge text-sm font-semibold px-4 py-1.5 rounded-full shadow-lg">LabVIEW & Python</span>
-                </div>
-            </section>
-
-            <!-- Research Projects Section -->
-            <section id="research" class="mb-12 pt-8">
-                <div class="section-header">
-                    <h2 class="text-3xl font-bold text-white">Research Projects (11 Projects, Led 6)</h2>
-                </div>
-                
-                <div class="space-y-8">
-                    
-                    <!-- Project 11 -->
-                    <div class="card p-6 rounded-lg shadow-2xl transition hover:shadow-indigo-500/30">
-                        <h3 class="text-xl font-semibold text-primary-light">11th Project: Antiferromagnetic Tunnel Junctions (AFMTJs)</h3>
-                        <p class="text-slate-400 mt-1">Leading R&D for low-energy and high-frequency switching. (NSF | 2022- On-going)</p>
-                        <p class="text-slate-300 mt-3">Managing a group of 1 Graduate and 2 undergraduate students.</p>
-                        <ul class="mt-3 space-y-2 text-slate-300">
-                            <li class="project-highlight pl-3">Fabricated by PVD, Photolithography, and Ion Etching. Characterized by MOKE, VSM, XRR, XRD, and Tested.</li>
-                            <li class="project-highlight pl-3">Became the 4th research group in the world to fabricate, characterize, and test AFMTJs.</li>
-                            <li class="project-highlight pl-3">Reported preliminary data exhibiting bias dependence and Mn ratios in PtMnx AFMTJs of TMR.</li>
-                            <li class="project-highlight pl-3">Gained expertise in SOT switching, Antiferromagnetic thin films and devices.</li>
-                        </ul>
-                    </div>
-
-                    <!-- Project 10 -->
-                    <div class="card p-6 rounded-lg shadow-2xl transition hover:shadow-indigo-500/30">
-                        <h3 class="text-xl font-semibold text-primary-light">10th Project: Magnon-assisted Spin Transfer Torque (STT) Switching</h3>
-                        <p class="text-slate-400 mt-1">Leading R&D on low-energy STT switching of in-plane and perpendicular MTJs with Antiferromagnetic Barrier (NiO). (DARPA (Franc) | 2022 - 2024)</p>
-                        <p class="text-slate-300 mt-3">Managing a group of 1 Graduate and 1 undergraduate students. Patented the technology.</p>
-                        <ul class="mt-3 space-y-2 text-slate-300">
-                            <li class="project-highlight pl-3">Fabricated, Characterized, and Tested using PVD, Photolithography (150nm), Ion Etching, MOKE, VSM, XRR, XRD.</li>
-                            <li class="project-highlight pl-3">Optimized the Oxygen ratio in NiO using reactive RF sputtering to obtain the desired stoichiometry and PMA.</li>
-                            <li class="project-highlight pl-3">Achieved the highest (26%) TMR among NiO-based MTJs.</li>
-                            <li class="project-highlight pl-3">Acquired expertise in STT switching, Magnons, and Antiferromagnets.</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Project 9 -->
-                    <div class="card p-6 rounded-lg shadow-2xl transition hover:shadow-indigo-500/30">
-                        <h3 class="text-xl font-semibold text-primary-light">9th Project (Collaboration): C-RAM and Exchange Coupled MTJs</h3>
-                        <p class="text-slate-400 mt-1">With University of Minnesota & NIST. (NSF | 2022 - 2023)</p>
-                        <ul class="mt-3 space-y-2 text-slate-300">
-                            <li class="project-highlight pl-3">Conducted R&D, Fabrication (PVD), and Characterization (XRR, MOKE) to create STT-switching P-MTJ devices.</li>
-                            <li class="project-highlight pl-3">Published two articles about C-RAM and Exchange coupled MTJs. Our CRAM project has been featured in the news.</li>
-                            <li class="project-highlight pl-3">Acquired knowledge about STT switching devices.</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Project 8 -->
-                    <div class="card p-6 rounded-lg shadow-2xl transition hover:shadow-indigo-500/30">
-                        <h3 class="text-xl font-semibold text-primary-light">8th Project (Collaboration): Optimizing PMA and Characterization</h3>
-                        <p class="text-slate-400 mt-1">With Stanford University – Mahendra D.C. (2022)</p>
-                        <ul class="mt-3 space-y-2 text-slate-300">
-                            <li class="project-highlight pl-3">Conducted TEM measurements on the thin films to observe the interface and crystalization.</li>
-                            <li class="project-highlight pl-3">Published the article about MnPd3 based SOT switching.</li>
-                            <li class="project-highlight pl-3">Acquired knowledge about TEM, SOT switching, and Perpendicular Magnetic Anisotropy (PMA).</li>
-                        </ul>
-                    </div>
-
-                    <!-- Project 7 -->
-                    <div class="card p-6 rounded-lg shadow-2xl transition hover:shadow-indigo-500/30">
-                        <h3 class="text-xl font-semibold text-primary-light">7th Project (Collaboration): Exchange-Coupled Top Electrode</h3>
-                        <p class="text-slate-400 mt-1">With University of North Carolina at Chapel Hill – Wei Zhang. (2022)</p>
-                        <ul class="mt-3 space-y-2 text-slate-300">
-                            <li class="project-highlight pl-3">Achieved the task of creating MTJs with fixed top electrode by using (Co/Pt)x multilayers.</li>
-                            <li class="project-highlight pl-3">Conducted R&D, Fabrication (PVD), and Characterization (XRR, MOKE).</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Project 6 -->
-                    <div class="card p-6 rounded-lg shadow-2xl transition hover:shadow-indigo-500/30">
-                        <h3 class="text-xl font-semibold text-primary-light">6th Project (Collaboration): SOT Devices with (Co/Pd)x</h3>
-                        <p class="text-slate-400 mt-1">With University of Delaware – Prof. John Q. Xiao. (SRC | 2021-2022)</p>
-                        <ul class="mt-3 space-y-2 text-slate-300">
-                            <li class="project-highlight pl-3">Conducted R&D, Fabrication (PVD), and Characterization (XRR, MOKE) on (Co/Pd)x multilayer structures.</li>
-                            <li class="project-highlight pl-3">Achieved the desired properties specifically Perpendicular Magnetic Anisotropy.</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Project 5 -->
-                    <div class="card p-6 rounded-lg shadow-2xl transition hover:shadow-indigo-500/30">
-                        <h3 class="text-xl font-semibold text-primary-light">5th Project: Heusler Alloy MTJs</h3>
-                        <p class="text-slate-400 mt-1">Led R&D on MTJs using Boron-doped Heusler alloy (Co₂FeAl) to achieve industry-compatible fabrication. (2021)</p>
-                        <p class="text-slate-300 mt-3">Worked with 1 undergraduate student.</p>
-                        <ul class="mt-3 space-y-2 text-slate-300">
-                            <li class="project-highlight pl-3">Fabricated, Characterized, and Tested using PVD, Photolithography, Ion Etching, MOKE, VSM, XRR, XRD, AFM.</li>
-                            <li class="project-highlight pl-3">Obtained a 50% increase in TMR with Boron doping. Published the article.</li>
-                            <li class="project-highlight pl-3">Acquired expertise about Heusler Alloys.</li>
-                        </ul>
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="card p-6 rounded-lg shadow-2xl transition hover:shadow-indigo-500/30">
-                        <h3 class="text-xl font-semibold text-primary-light">4th Project (Collaboration): Interlayer Exchange Coupling</h3>
-                        <p class="text-slate-400 mt-1">With Purdue University - Prof. Sunil Bhave. (NSF | 2020)</p>
-                        <ul class="mt-3 space-y-2 text-slate-300">
-                            <li class="project-highlight pl-3">Conducted R&D, Fabrication (PVD), and Characterization (XRR, VSM) to achieve desired magnetic properties.</li>
-                            <li class="project-highlight pl-3">Acquired expertise in interlayer exchange coupling.</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Project 3 -->
-                    <div class="card p-6 rounded-lg shadow-2xl transition hover:shadow-indigo-500/30">
-                        <h3 class="text-xl font-semibold text-primary-light">3rd Project: VCMA Effect in MTJs with High-k Barrier</h3>
-                        <p class="text-slate-400 mt-1">Led R&D, fabrication, characterization, and testing on micro devices (MTJs) with a high-k insulating barrier (SrTiO3). (SRC | 2019-2020)</p>
-                        <ul class="mt-3 space-y-2 text-slate-300">
-                            <li class="project-highlight pl-3">Investigated the Voltage-Controlled Magnetic Anisotropy (VCMA) effect. Obtained signal (TMR) shown to be low (<1%) for applications.</li>
-                            <li class="project-highlight pl-3">Acquired knowledge about High-k dielectric fabrication.</li>
-                        </ul>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="card p-6 rounded-lg shadow-2xl transition hover:shadow-indigo-500/30">
-                        <h3 class="text-xl font-semibold text-primary-light">2nd Project: 2D Materials (h-BN) for Thermal Stability</h3>
-                        <p class="text-slate-400 mt-1">Led fabrication, characterization, and testing, utilizing 2D insulating materials (h-BN) and ferromagnetic compounds. (SRC | 2018-2019)</p>
-                        <ul class="mt-3 space-y-2 text-slate-300">
-                            <li class="project-highlight pl-3">Investigated magnetic transport properties and sought to improve the thermal stability of MTJs.</li>
-                            <li class="project-highlight pl-3">PVD system is shown to be not suitable for fabricating 2D layers for MTJs.</li>
-                            <li class="project-highlight pl-3">Acquired knowledge about 2D material synthesis.</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Project 1 -->
-                    <div class="card p-6 rounded-lg shadow-2xl transition hover:shadow-indigo-500/30">
-                        <h3 class="text-xl font-semibold text-primary-light">1st Project: Perpendicular Magnetic Tunnel Junctions (p-MTJs)</h3>
-                        <p class="text-slate-400 mt-1">Partially led the R&D, characterization, and testing. (Published 2022)</p>
-                        <ul class="mt-3 space-y-2 text-slate-300">
-                            <li class="project-highlight pl-3">Achieved a record 256% Tunneling Magnetoresistance (TMR), using industry-compatible fabrication methods.</li>
-                            <li class="project-highlight pl-3">Techniques used: PVD, Photolithography, Ion Etching, XRD, XRR, VSM, electrical transport measurements.</li>
-                            <li class="project-highlight pl-3">Optimized the interfaces between Ta/CoFeB and CoFeB/MgO by controlling oxidation and magnetically dead layer.</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Undergrad Project 2 -->
-                    <div class="card p-6 rounded-lg shadow-2xl transition hover:shadow-indigo-500/30">
-                        <h3 class="text-xl font-semibold text-primary-light">Undergrad 2nd Project: Observing a New Skyrmion Type "Radial-Vortex" </h3>
-                        <p class="text-slate-400 mt-1">Worked as an Undergraduate Research Assistant to Prof. Ozhan Ozatay</p>
-                        <ul class="mt-3 space-y-2 text-slate-300">
-                            <li class="project-highlight pl-3">Deposited, Characterized (MFM, VSM-Dynacool) the devices with a new Skyrmion type called Radial-vortex</li>
-                            <li class="project-highlight pl-3">MFM measurements are performed in-situ magnetic field to observe features around the resolution limit (∼10nm)</li>
-                            <li class="project-highlight pl-3">Published our observation which is computantionally predicted by our collaborator Giovanni Finocchio.</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Undergrad Project 1 -->
-                    <div class="card p-6 rounded-lg shadow-2xl transition hover:shadow-indigo-500/30">
-                        <h3 class="text-xl font-semibold text-primary-light">Undergrad 1st Project: Creating and Manipulating the Magnetic Configuration of Anti-vortex</h3>
-                        <p class="text-slate-400 mt-1">Worked as an Undergraduate Research Assistant to Prof. Ozhan Ozatay</p>
-                        <ul class="mt-3 space-y-2 text-slate-300">
-                            <li class="project-highlight pl-3">Characterized (AFM, MFM) and tested the micro-devices with Anti-vortex formations</li>
-                            <li class="project-highlight pl-3">Designed and machined magnet holders to upgrade MFM to apply in-situ magnetic field</li>
-                            <li class="project-highlight pl-3">Acquired expertise in Labview and testing by developing the programs and DC and high-freq. measurement setups
-                            <li class="project-highlight pl-3">Tested electrically by utilizing Anisotropic Magnetoresistance (AMR) effect and presented in the 1st conference I joined (APS 2015)</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- Publications Section -->
-            <section id="publications" class="mb-12 pt-8">
-                <div class="section-header">
-                    <h2 class="text-3xl font-bold text-white">Patent and Publications</h2>
-                </div>
-                <p class="text-lg leading-relaxed mb-6">
-                    I hold 1 patent and 10 peer-reviewed publications.
-                </p>
-
-                <div class="space-y-6">
-                    <!-- Patent -->
-                     <div>
-                        <h3 class="text-xl font-semibold text-white mb-2 border-b border-indigo-500 pb-1 w-max">Patent</h3>
-                        <div class="publication-item pb-4">
-                            <p class="text-slate-200">
-                                <span class="font-semibold text-primary-light">Magnetic tunneling junctions with a magnetic barrier;</span> A Habiboglu et al. US Patent App. 18/462,887 (Decreasing the switching energy up to 5 times using wasted heat through magnons)
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Publications -->
-                    <div>
-                        <h3 class="text-xl font-semibold text-white mb-2 border-b border-indigo-500 pb-1 w-max">Publications</h3>
-                        
-                        <div class="publication-item pb-4">
-                            <p class="text-slate-200">
-                                <span class="font-semibold text-primary-light">1- The impact of boron doping in the tunneling magnetoresistance of Heusler alloy Co2FeAl</span><br>
-                                A Habiboglu, Y Chandak, P Khanal, B Larsen, B Zhou, C Eckel, J Cutshall, (2023) Journal of Applied Physics 134 (24)
-                            </p>
-                        </div>
-
-                        <div class="publication-item pb-4">
-                            <p class="text-slate-200">
-                                <span class="font-semibold text-primary-light">2- Observation of anti-damping spin-orbit torques generated by in-plane and out-of-plane spin polarizations in MnPd3</span><br>
-                                M Dc, DF Shao, VDH Hou, A Vailionis, P Quarterman, A Habiboglu, (2023) Nature Materials 22 (5), 591-598
-                            </p>
-                        </div>
-
-                        <div class="publication-item pb-4">
-                            <p class="text-slate-200">
-                                <span class="font-semibold text-primary-light">3- Experimental demonstration of magnetic tunnel junction-based computational random-access memory</span><br>
-                                Y Lv, BR Zink, RP Bloom, H Cılasun, P Khanal, S Resch, Z Chowdhury, Ali Habiboglu, (2023) npj Unconventional Computing 1 (1), 3
-                            </p>
-                        </div>
-
-                        <div class="publication-item pb-4">
-                            <p class="text-slate-200">
-                                <span class="font-semibold text-primary-light">4- Voltage-controlled antiferromagnetism in magnetic tunnel junctions</span><br>
-                                M Xu, M Li, P Khanal, A Habiboglu, B Insana, Y Xiong, T Peterson, (2020) Physical review letters 124 (18), 187701
-                            </p>
-                        </div>
-
-                        <div class="publication-item pb-4">
-                            <p class="text-slate-200">
-                                <span class="font-semibold text-primary-light">5- Observation of magnetic radial vortex nucleation in a multilayer stack with tunable anisotropy</span><br>
-                                V Karakas, A Gokce, AT Habiboglu, S Arpaci, K Ozbozduman, I Cinar, (2018) Scientific Reports 8 (1), 7180
-                            </p>
-                        </div>
-
-                        <div class="publication-item pb-4">
-                            <p class="text-slate-200">
-                                <span class="font-semibold text-primary-light">6- Perpendicular magnetic anisotropy, tunneling magnetoresistance and spin-transfer torque effect in magnetic tunnel junctions with Nb layers</span><br>
-                                B Zhou, P Khanal, OJ Benally, D Lyu, DB Gopman, A Enriquez, Ali Habiboglu, (2023) Scientific Reports 13 (1), 3454
-                            </p>
-                        </div>
-
-                        <div class="publication-item pb-4">
-                            <p class="text-slate-200">
-                                <span class="font-semibold text-primary-light">7- L10 FePd-based perpendicular magnetic tunnel junctions with 65% tunnel magnetoresistance and ultralow switching current density</span><br>
-                                D Lyu, JE Shoup, AT Habiboglu, Q Jia, P Khanal, BR Zink, Y Lv, B Zhou, (2024) AIP Advances 14 (2)
-                            </p>
-                        </div>
-
-                        <div class="publication-item pb-4">
-                            <p class="text-slate-200">
-                                <span class="font-semibold text-primary-light">8- Perpendicular magnetic tunnel junctions with multi-interface free layer</span><br>
-                                P Khanal, B Zhou, M Andrade, Y Dang, A Davydov, A Habiboglu, (2021) Applied Physics Letters 119 (24)
-                            </p>
-                        </div>
-
-                        <div class="publication-item pb-4">
-                            <p class="text-slate-200">
-                                <span class="font-semibold text-primary-light">9- Enhanced magnetoresistance in perpendicular magnetic tunneling junctions with MgAl2O4 barrier</span><br>
-                                P Khanal, B Zhou, M Andrade, C Mastrangelo, A Habiboglu, A Enriquez, (2022) Journal of Magnetism and Magnetic Materials 563, 169914
-                            </p>
-                        </div>
-
-                         <div class="publication-item pb-4">
-                            <p class="text-slate-200">
-                                <span class="font-semibold text-primary-light">10- Interplay of symmetry-conserved tunneling, interfacial oxidation and perpendicular magnetic anisotropy in CoFeB/MgO-based junctions</span><br>
-                                P Khanal, B Zhou, H Almasi, A Habiboglu... arXiv:2210.16734 (2022)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <!-- Education & Teaching Section -->
-            <section id="education" class="mb-12 pt-8">
-                <div class="section-header">
-                    <h2 class="text-3xl font-bold text-white">Education & Teaching</h2>
-                </div>
-                
-                <div class="space-y-6">
-                    <!-- Academic Education -->
-                    <div class="card p-6 rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold text-primary-light">Ph.D. in Physics (Minor in Materials Science and Engineering)</h3>
-                        <p class="text-slate-400">University of Arizona, Tucson, AZ </p>
-                        <h3 class="text-xl font-semibold text-primary-light mt-3">M.S. in Physics</h3>
-                        <p class="text-slate-400">University of Arizona, Tucson, AZ | 2022</p>
-                        <h3 class="text-xl font-semibold text-primary-light mt-3">B.Sc. in Physics</h3>
-                        <p class="text-slate-400">Bogazici University, Istanbul, Turkey | 2016</p>
-                    </div>
-
-                    <!-- Teaching & Training -->
-                    <div class="card p-6 rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold text-primary-light">Teaching & Training</h3>
-                        <p class="mt-2">
-                            <span class="font-semibold">Semiconductor Fabrication and Design Courses:</span> In 2025, in addition to my research activities, I contributed to curriculum design, course development, and online and live instruction over two semesters. I co-developed and taught graduate-level courses covering topics from device physics to advanced logic circuit design. One course was designed for out-of-field faculty, while the other targeted in-field professors. We collaborated with colleagues from different engineering disciplines to deliver advanced courses.
-                        </p>
-                        <p class="mt-2">
-                            We trained around <span class="font-semibold">40 professors and PhD students</span> from two universities including Tecnológico de Monterrey (#2 in Mexico). Live teaching sessions with Professors and PhD students from different backgrounds were very exciting, especially after creating the course material according to our own curriculum design.
-                        </p>
-                        <p class="mt-2">
-                            At the University of Arizona, I taught Physics 241 (Electricity and Magnetism Laboratory) to two classes and Physics 141 (Mechanics Laboratory) with approximately 20 students each.  I also led Physics 102 (Introductory Physics) discussion sessions for 3 classes with more than 30 students per class. As part of my Graduate Teaching Assistantship, I graded exams and homeworks for 3 different classes. 
-                         </p>
-                        <p class="mt-2">
-                            Prior to joining the PhD program, from 2011 to 2017, I provided undergraduate tutoring in Physics and Mathematics at the 101, 102, 201, and 202 levels, completing over 600 hours of tutoring sessions.
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="bg-slate-900 border-t border-indigo-900 mt-12 py-6">
-            <div class="max-w-6xl mx-auto text-center text-slate-500">
-                <p>&copy; 2024 Ali Habiboglu. Built with Physics & Engineering.</p>
-            </div>
-        </footer>
+  <aside class="rail">
+    <div class="rail-inner">
+      <p class="namemark"><a href="index.html">Ali Habiboglu</a></p>
+      <p class="rolemark">Provost's Postdoctoral Fellow<br>Materials Science and Engineering<br>University of Arizona</p>
+      <nav class="nav" aria-label="Main">
+        <a class="here" href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="presentations.html">Presentations</a>
+        <a href="awards.html">Awards</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="service.html">Service</a>
+        <a href="media.html">Media</a>
+      </nav>
+      <div class="rail-contact">
+        <a href="mailto:alitahahabiboglu@arizona.edu">alitahahabiboglu@arizona.edu</a><br>
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=w_5i1ywAAAAJ">Google Scholar</a><br>
+        <a href="https://orcid.org/0000-0002-6725-2208">ORCID</a><br>
+        <a href="https://www.linkedin.com/in/ali-habiboglu-91302963">LinkedIn</a><br>
+        <a href="CV.pdf">CV (PDF)</a>
+      </div>
     </div>
+  </aside>
+
+  <main id="main">
+
+    <h1>Devices that survive radiation, and report what it did to them.</h1>
+
+    <p class="lede">I am an experimental physicist working on thin-film materials and devices for environments where ordinary electronics fail. My doctoral work built magnetic tunnel junctions with antiferromagnetic barriers. My current work combines high-entropy alloy coatings with graphene nanoribbon sensors to make a fusion reactor first wall that both resists damage and measures it while the machine is running.</p>
+
+    <figure class="figure">
+      <img src="FigureHEA1.png" alt="Self-healing high-entropy alloy first-wall coating with embedded graphene nanoribbon radiation diagnostics.">
+      <figcaption>Self-healing first-wall coating built from high-entropy alloys with embedded graphene nanoribbon radiation diagnostics.</figcaption>
+    </figure>
+
+    <section>
+      <h2>About</h2>
+      <p>I completed my PhD in Physics at the University of Arizona in Weigang Wang's group, with a minor in Materials Science and Engineering. My dissertation covered magnetic tunnel junctions with novel electrodes and barriers. I am now a Provost's Postdoctoral Fellow in Zafer Mutlu's group in the Department of Materials Science and Engineering.</p>
+      <p>Most of my time is spent in the cleanroom and at the probe station: thin-film deposition by sputtering and molecular beam epitaxy, photolithography and etching, and the magnetic, structural and electrical characterization that tells you whether a stack actually works. I also build and rebuild the instruments themselves, which is usually the fastest route to a measurement nobody else can make.</p>
+      <p>Over the PhD I worked on eleven projects and led six of them, funded by the Semiconductor Research Corporation, DARPA and the National Science Foundation, with collaborators at Minnesota, Stanford, Delaware, Purdue, North Carolina and NIST. The full list is on the <a href="projects.html">Projects</a> page.</p>
+      <p>My publications appear under A. Habiboglu. In Turkish my name is written Ali Taha Habiboğlu.</p>
+    </section>
+
+    <section>
+      <h2>Research interests</h2>
+      <ul class="cols">
+        <li>First wall and plasma-facing materials for fusion energy</li>
+        <li>High-entropy thin films</li>
+        <li>Graphene nanoribbons (GNRs)</li>
+        <li>Condensed matter physics</li>
+        <li>Metal and oxide thin-film growth and epitaxy</li>
+        <li>Physical vapor deposition and magnetron sputtering</li>
+        <li>Thin-film characterization under extreme environments</li>
+        <li>Device physics</li>
+        <li>Semiconductors</li>
+        <li>Nanoelectronics</li>
+        <li>Microelectronics</li>
+        <li>2D materials</li>
+        <li>Quantum materials and devices</li>
+        <li>Magnetic materials</li>
+        <li>Memory and logic technologies</li>
+        <li>Transistors</li>
+        <li>Spintronics</li>
+        <li>Quantum sensing</li>
+        <li>Magnetic sensors</li>
+        <li>Magnetic tunnel junctions (MTJs)</li>
+        <li>Low-energy high-performance computing</li>
+        <li>In-memory computing</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>News</h2>
+      <ul class="stack-list">
+        <li class="dated">
+          <span class="when">Aug 2026</span>
+          <span>Received the IEEE Neil Smith Award at TMRC 2026 for work on magnetic tunnel junctions with antiferromagnetic barriers. <a href="https://physics.arizona.edu/news/ali-habiboglu-receives-neil-smith-award-tmrc-2026">Department announcement</a>.</span>
+        </li>
+        <li class="dated">
+          <span class="when">Aug 2026</span>
+          <span>Started as a Provost's Postdoctoral Fellow in the Mutlu group, Department of Materials Science and Engineering, University of Arizona.</span>
+        </li>
+        <li class="dated">
+          <span class="when">Jul 2026</span>
+          <span>The group's work on gamma response in graphene nanoribbon transistors was covered by <a href="https://news.arizona.edu/news/quantum-materials-discovery-could-advance-electronics-extreme-environments">University of Arizona News</a> and syndicated internationally.</span>
+        </li>
+        <li class="dated">
+          <span class="when">2026</span>
+          <span>Completed my PhD in Physics, University of Arizona. Thesis: Advanced Magnetic Tunnel Junctions with Novel Electrodes and Barriers.</span>
+        </li>
+        <li class="dated">
+          <span class="when">Jun 2026</span>
+          <span>Presented self-healing first-wall coatings with embedded nanoribbon diagnostics at the Arizona Livermore Days Workshop.</span>
+        </li>
+        <li class="dated">
+          <span class="when">Apr 2026</span>
+          <span>Selected for the <a href="https://provost.arizona.edu/provosts-postdoctoral-fellows-program">University of Arizona Provost's Postdoctoral Fellowship</a>. <a href="https://physics.arizona.edu/news/ali-habiboglu-selected-ua-provost-postdoctoral-fellowship">Department announcement</a>.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Department of Materials Science and Engineering, University of Arizona, Tucson, Arizona.</p>
+      <ul class="plain">
+        <li><a href="mailto:alitahahabiboglu@arizona.edu">alitahahabiboglu@arizona.edu</a></li>
+        <li><a href="https://scholar.google.com/citations?hl=en&amp;user=w_5i1ywAAAAJ">Google Scholar</a>, <a href="https://orcid.org/0000-0002-6725-2208">ORCID</a>, <a href="https://www.linkedin.com/in/ali-habiboglu-91302963">LinkedIn</a></li>
+        <li>Groups: <a href="https://zafermutlu.arizona.edu/">Mutlu group, University of Arizona</a>; <a href="https://sites.google.com/view/spin-lab/home">Wang group, University of Arizona</a>; <a href="https://buspin.bogazici.edu.tr/">BUSPIN, Bogazici University</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Ali Habiboglu, Department of Materials Science and Engineering, University of Arizona, Tucson, Arizona. Last updated September 2026.</p>
+  </footer>
+
+</div>
 </body>
 </html>
